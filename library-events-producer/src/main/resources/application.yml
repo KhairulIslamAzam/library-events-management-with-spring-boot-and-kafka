@@ -13,8 +13,8 @@ spring:
   kafka:
     producer:
       bootstrap-servers: localhost:9092,localhost:9093,localhost:9094
-      key-serial izer: org.springframework.kafka.common.serialization.IntegerSerializer
-      value-serializer: org.springframework.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
     admin:
       properties:
         bootstrap.servers: localhost:9092,localhost:9093,localhost:9094
@@ -26,8 +26,8 @@ spring:
   kafka:
     producer:
       bootstrap-servers: dev:9092
-      key-serial izer: org.springframework.kafka.common.serialization.IntegerSerializer
-      value-serializer: org.springframework.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
 ---
 spring:
   config:
@@ -36,5 +36,5 @@ spring:
   kafka:
     producer:
       bootstrap-servers: dev:9092
-      key-serial izer: org.springframework.kafka.common.serialization.IntegerSerializer
-      value-serializer: org.springframework.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
