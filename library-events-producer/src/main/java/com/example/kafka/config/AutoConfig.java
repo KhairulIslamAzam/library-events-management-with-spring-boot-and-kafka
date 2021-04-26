@@ -18,8 +18,8 @@ public class AutoConfig {
     @Bean
     public NewTopic libraryEvents(){
         return TopicBuilder.name("library-events")
-                .partitions(3)
-                .replicas(3)
+                .partitions(2)
+                .replicas(2)
                 .build();
     }
 }
